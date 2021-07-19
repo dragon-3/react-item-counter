@@ -32,6 +32,15 @@ class App extends Component {
   ]
   };
 
+  removeItem = (id) => {
+    this.setState( prevState => {
+      return {
+        items: prevState.item.filter(p => p.id !== id)
+      }
+    })
+  }
+  
+
   
 
   render() {
