@@ -5,7 +5,7 @@ function Items (props) {
     
     return (
         <div className="items">
-
+            
             <div className="centered">
                 <ul>
                     <li>
