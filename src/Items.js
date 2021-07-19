@@ -6,11 +6,11 @@ function Items (props) {
     return (
         <div className="items">
             
-            <div className="centered">
+            <div className="item-centered">
                 <ul>
                     <li>
-                        <span className="name">{props.name}</span>
-                        <span className="price">{props.price}</span>
+                        <span className="item-name">{props.name}</span>
+                        <span className="item-price">{props.price}</span>
                         <button className="button" onClick={() => props.removeItem(props.id)}>Remove</button>
                     </li>
                 </ul>
