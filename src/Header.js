@@ -3,8 +3,15 @@ import React from 'react';
 function Header(props) {
     return (
         <header className="header">
-            {props.title}
+            <div className="header-title">
+                {props.title}
+            </div>
+
+            <div className="item-title">
+                <p>Items In Cart - Total: {props.totalItems}</p>
+            </div>
         </header>
+        
     )
 }
 

@@ -23,12 +23,13 @@
   to { transform: rotate(360deg); }
 }
 
-.header {
+.header-title {
   margin-top: 80px;
   margin-bottom: 240px;
   text-align: center;
   font-size: 30px;
   background: rgb(121, 209, 32);
+  padding: 30px;
 }
 .centered {
   margin: 30px;
