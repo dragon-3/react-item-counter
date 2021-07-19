@@ -24,7 +24,8 @@ class App extends Component {
         name: "Nike sweat shirt",
         price: "$" + 130,
         id: 3
-      },{
+      },
+      {
         name: "iPhone X",
         price: "$" + 1100,
         id: 4
@@ -35,9 +36,9 @@ class App extends Component {
   removeItem = (id) => {
     this.setState( prevState => {
       return {
-        items: prevState.item.filter(p => p.id !== id)
-      }
-    })
+        items: prevState.items.filter(p => p.id !== id)
+      };
+    });
   }
   
 
@@ -55,6 +56,8 @@ class App extends Component {
           <Items
             name={item.name}
             price={item.price}
+            id={item.id}
+            removeItem={this.removeItem}
           />
           
         )}

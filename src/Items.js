@@ -11,6 +11,7 @@ function Items (props) {
                     <li>
                         <span className="name">{props.name}</span>
                         <span className="price">{props.price}</span>
+                        <button className="button" onClick={() => props.removeItem(props.id)}>Remove</button>
                     </li>
                 </ul>
             </div>
