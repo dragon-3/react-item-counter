@@ -38,6 +38,9 @@ class App extends Component {
     return (
       <div>
         <Header title="Shopping Cart" />
+        <div className="item-title">
+          <p>Items In Cart - Total: 0</p>
+        </div>
 
         {this.state.items.map( item => 
           <Items
@@ -46,10 +49,7 @@ class App extends Component {
           />
           
         )}
-        
 
-        
-        
       </div>
     );
   }
